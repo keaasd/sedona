@@ -1,0 +1,121 @@
+.navigation__toggle {
+  background-color: transparent;
+  width: 23px;
+  height: 22px;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -100%;
+  top: 0;
+  right: 0;
+  background-color: #81B3D2;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 1px 0px red;
+  width: 100%;
+}
+.navigation__item {
+  list-style: none;
+}
+.navigation__link {
+  color: white;
+  display: block;
+  border-bottom: 1px solid #678FA8;
+  border-top: 1px solid #81B3D2;
+  padding: 23px 0 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 101px;
+}
+:root {
+  --color-1: #81B3D2;
+  --font-basic: "PT Sans" , sans-serif;
+  --text-size-mini: 3rem;
+  --white: #ffffff;
+  --black: #000000;
+  --special-yellow: #ffbf47;
+  --success: #5FBB2D;
+  --basic-grey: #3D546F;
+  --btn-color-black: #18171A;
+  --white-opasity: rgba(255, 255, 255, 0.3);
+  --basic-red: #EE3643;
+  --color-icon: #888888;
+  --basic-background: #F1F5F7;
+  --light-violet: #F9F5F0;
+  --basic-greylight: #C5C5C5;
+  --grey-ligth: #EAEAEA;
+  --gray: #293449;
+  --Error: #BA2732;
+  --basic-green: #63A63E;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+}
+body {
+  color: #000;
+  font-family: var(--font-basic);
+  font-weight: regular;
+}
+a {
+  text-decoration: none;
+}
+img,
+svg {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s linear;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+button,
+input {
+  outline: none;
+  border: none;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
