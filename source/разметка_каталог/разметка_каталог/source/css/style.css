@@ -1,0 +1,285 @@
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"); }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff"); }
+
+.page {
+  height: 100%;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif; }
+
+.page__body {
+  display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  color: #000000;
+  text-transform: uppercase; }
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #81B3D2;
+  padding: 14px 32px 14px 32px; }
+
+.page-header {
+  background-color: #FFFFFF;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 389px; }
+
+.main-nav {
+  background-color: #81B3D2; }
+
+.main-nav__list {
+  list-style: none;
+  margin: 0; }
+
+.main-nav__item a {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px; }
+
+.advantages {
+  padding-top: 32px;
+  text-align: center; }
+
+.advantages__slogan {
+  font-weight: bold;
+  font-size: 21px;
+  margin: 0;
+  margin-bottom: 26px; }
+
+.advantages__text {
+  margin: 0;
+  margin-bottom: 11px; }
+
+.advantages__list {
+  list-style: none; }
+
+.advantages__title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 21px; }
+
+.advantages__description {
+  margin: 0;
+  padding-bottom: 39px; }
+
+.advantages__item--pic {
+  position: relative; }
+
+.advantages__item--pic::after {
+  display: block;
+  content: "";
+  width: 512px;
+  height: 256px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+
+.advantages__item--pic:first-child::after {
+  background-image: url("../img/photo-city-1x.jpg"); }
+
+.advantages__item--pic:nth-child(2)::after {
+  background-image: url("../img/photo-bridge-1x.jpg"); }
+
+.advantages__item {
+  padding-top: 25px; }
+
+.advantages__item:first-child {
+  color: #FFFFFF;
+  background-color: #81B3D2; }
+
+.advantages__item:nth-child(2) {
+  color: #FFFFFF;
+  background-color: #81B3D2; }
+
+.advantages__item:nth-child(3),
+.advantages__item:nth-child(4),
+.advantages__item:nth-child(5) {
+  background-color: #EEEEEE; }
+
+.city-advantages__list {
+  color: #000000;
+  background-color: #FFFFFF;
+  list-style: none;
+  text-align: left;
+  font-size: 18px;
+  padding: 35px 0 35px 50px; }
+
+.city-advantages__item:not(:last-child) {
+  padding-bottom: 26px; }
+
+.city-advantages__title {
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 21px; }
+
+.city-advantages__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px; }
+
+.city-advantages__item--lodging,
+.city-advantages__item--souvenir,
+.city-advantages__item--food {
+  position: relative; }
+
+.city-advantages__item--lodging::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/city-advantages/icon-house.svg");
+  top: -10px;
+  left: -48px; }
+
+.city-advantages__item--souvenir::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 38px;
+  background-image: url("../img/city-advantages/icon-gift.svg");
+  top: -10px;
+  left: -45px; }
+
+.city-advantages__item--food::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  background-image: url("../img/city-advantages/icon-burger.svg");
+  top: -7px;
+  left: -52px; }
+
+.search {
+  margin: 33px auto 49px auto;
+  text-align: center; }
+
+.search__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 21px;
+  margin-bottom: 21px; }
+
+.search__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 27px; }
+
+.search__button {
+  padding-bottom: 18px; }
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-content: center;
+  align-items: center; }
+
+.social__item {
+  margin-right: 6px; }
+
+.social__link {
+  width: 46px;
+  height: 48px;
+  background-color: #81B3D2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.social__item:hover {
+  background-color: #669EC0; }
+
+.social__item:active {
+  background-color: #5496BD; }
+
+.social__item:active::before {
+  opacity: 0.3; }
+
+.social__link::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.social__link--twitter::before {
+  background-image: url("../img/icon/icon-twitter.svg"); }
+
+.social__link--fb::before {
+  background-image: url("../img/icon/icon-facebook.svg"); }
+
+.social__link--youtube::before {
+  background-image: url("../img/icon/icon-youtube.svg"); }
+
+.copyright {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 23px; }
+
+.copyright__item {
+  margin: 0;
+  margin-right: 15px; }
+
+.page-footer {
+  margin-top: 36px;
+  text-align: center; }
+
+.page-footer__item:first-child {
+  font-weight: bold;
+  font-size: 21px; }
+
+/*# sourceMappingURL=style.css.map */
