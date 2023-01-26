@@ -1,19 +1,53 @@
+.page .page-header {
+  padding: 17px 0;
+}
+.page .page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 101px;
+  top: 0;
+}
+.navigation {
+  text-align: right;
+}
 .navigation__toggle {
   background-color: transparent;
   width: 23px;
   height: 22px;
 }
-.navigation__list {
-  display: flex;
-  flex-direction: column;
+.navigation__wrapper {
   position: absolute;
   top: -100%;
-  top: 0;
   right: 0;
-  background-color: #81B3D2;
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0px 1px 0px red;
   width: 100%;
+  height: 100vw;
+  height: 100%;
+  transition: 1s;
+}
+.navigation__cross {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  z-index: 10;
+  width: 23px;
+  height: 23px;
+  fill: white;
+}
+.navigation__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #81B3D2;
+  width: 100%;
+}
+.navigation__list::after {
+  content: '';
+  height: 7px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 .navigation__item {
   list-style: none;
@@ -21,18 +55,15 @@
 .navigation__link {
   color: white;
   display: block;
-  border-bottom: 1px solid #678FA8;
-  border-top: 1px solid #81B3D2;
   padding: 23px 0 18px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  background-color: inherit;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
-.page-header__logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 101px;
+.navigation__toggle--pic {
+  fill: #81B3D2;
 }
 :root {
   --color-1: #81B3D2;
