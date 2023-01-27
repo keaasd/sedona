@@ -1,39 +1,42 @@
-@import url("header.less");:root {
+@import url("header.less");
+
+:root {
   // В подготовленной автоматизации находятся три команды:
   // npm test запускает тест editorconfig и stylelint;
   // npm start запускает browsersync и следит за изменениями стилей и вёрстки;
   // npm run build запускает компиляцию выбранного препроцессора.
-  // 678FA8
-  // 81B3D2
-  --color-1: #81B3D2;
+
+  --color-1: #81b3d2;
   --font-basic: "PT Sans", sans-serif;
   --text-size-mini: 3rem;
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
   --special-yellow: rgba(255, 191, 71, 1);
-  --success: #5FBB2D;
-  --basic-grey: #3D546F;
-  --btn-color-black: #18171A;
+  --success: #5fbb2d;
+  --basic-grey: #3d546f;
+  --btn-color-black: #18171a;
   --white-opasity: rgba(255, 255, 255, 0.3);
-  --basic-red: #EE3643;
+  --basic-red: #ee3643;
   --color-icon: #888888;
-  --basic-background: #F1F5F7;
-  --light-violet: #F9F5F0;
-  --basic-greylight: #C5C5C5;
-  --grey-ligth: #EAEAEA;
+  --basic-background: #f1f5f7;
+  --light-violet: #f9f5f0;
+  --basic-greylight: #c5c5c5;
+  --grey-ligth: #eaeaea;
   --gray: #293449;
-  --Error: #BA2732;
-  --basic-green: #63A63E;
-  --special-greenlight: #8ED78F;
-  --special-yellowlight: #FFD180;
-  --special-blue: #3BBCE3;
-  --special-lilac: #DC91D8;
+  --Error: #ba2732;
+  --basic-green: #63a63e;
+  --special-greenlight: #8ed78f;
+  --special-yellowlight: #ffd180;
+  --special-blue: #3bbce3;
+  --special-lilac: #dc91d8;
 }
+
 body {
-  color: #000;
+  color: #000000;
   font-family: var(--font-basic);
   font-weight: regular;
 }
+
 a {
   text-decoration: none;
 }
@@ -63,6 +66,7 @@ p {
   padding: 0;
   margin: 0;
 }
+
 ul,
 li {
   margin: 0;
@@ -74,9 +78,11 @@ input {
   outline: none;
   border: none;
 }
+
 button {
   cursor: pointer;
 }
+
 .container {
   padding-left: 15px;
   padding-right: 15px;

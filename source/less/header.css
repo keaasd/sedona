@@ -38,11 +38,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   width: 100%;
 }
 .navigation__list::after {
-  content: '';
+  content: "";
   height: 7px;
   width: 100%;
   position: absolute;
@@ -63,5 +63,5 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 .navigation__toggle--pic {
-  fill: #81B3D2;
+  fill: #81b3d2;
 }
