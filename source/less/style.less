@@ -1,16 +1,11 @@
 @import url("header.less");
 
 :root {
-  // В подготовленной автоматизации находятся три команды:
-  // npm test запускает тест editorconfig и stylelint;
-  // npm start запускает browsersync и следит за изменениями стилей и вёрстки;
-  // npm run build запускает компиляцию выбранного препроцессора.
-
   --color-1: #81b3d2;
   --font-basic: "PT Sans", sans-serif;
   --text-size-mini: 3rem;
-  --white: rgb(255, 255, 255);
-  --black: rgb(0, 0, 0);
+  --color_default: rgb(255, 255, 255);
+  --whitepaper-inverse: #000000;
   --special-yellow: rgba(255, 191, 71, 1);
   --success: #5fbb2d;
   --basic-grey: #3d546f;
@@ -29,58 +24,6 @@
   --special-yellowlight: #ffd180;
   --special-blue: #3bbce3;
   --special-lilac: #dc91d8;
-}
-
-body {
-  color: #000000;
-  font-family: var(--font-basic);
-  font-weight: regular;
-}
-
-a {
-  text-decoration: none;
-}
-
-img,
-svg {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: 0.2s linear;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  padding: 0;
-  margin: 0;
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
-button,
-input {
-  outline: none;
-  border: none;
-}
-
-button {
-  cursor: pointer;
 }
 
 .container {
@@ -109,3 +52,8 @@ button {
 // a:hover {}
 
 // a:active {}
+
+// В подготовленной автоматизации находятся три команды:
+// npm test запускает тест editorconfig и stylelint;
+// npm start запускает browsersync и следит за изменениями стилей и вёрстки;
+// npm run build запускает компиляцию выбранного препроцессора.
