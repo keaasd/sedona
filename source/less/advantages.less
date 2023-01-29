@@ -1,0 +1,51 @@
+.advantages__bg {
+  height: 389px;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url("../img/bg-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  z-index: -1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/bg-text-1.png");
+    height: 100%;
+    top: 0;
+    width: 100vw;
+    // max-width: 100%;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__wrap {
+  padding: 27px 0 32px;
+  text-align: center;
+}
+
+.advantages__item {
+  background-color: #81b3d2;
+}
+
+.advantages__triangle {
+  position: relative;
+  padding: 57px 0 39px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-right: 384px solid transparent;
+    border-left: 384px solid transparent;
+    border-top: 37px solid var(--color_default);
+    transform: translateX(-50%);
+  }
+}

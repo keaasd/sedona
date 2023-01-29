@@ -1,10 +1,13 @@
 @import url("header.less");
+@import url("advantages.less");
+@import url("title.less");
+@import url("subtitle.less");
 
 :root {
   --color-1: #81b3d2;
   --font-basic: "PT Sans", sans-serif;
-  --text-size-mini: 3rem;
   --color_default: rgb(255, 255, 255);
+  --text-size-mini: 3rem;
   --whitepaper-inverse: #000000;
   --special-yellow: rgba(255, 191, 71, 1);
   --success: #5fbb2d;
@@ -26,9 +29,34 @@
   --special-lilac: #dc91d8;
 }
 
+.page__body {
+  font-family: var(--font-basic);
+  background-color: var(--color_default);
+  color: #000000;
+  margin: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+button,
+a {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   // max-width: ;
 }
 

@@ -17,12 +17,12 @@
   <header class="page-header">
     <h1 class="visually-hidden">Добро пожаловать в великолепный город Седона</h1>
     <div class="container">
-      <div class="page-header__logo">
+      <a class="page-header__logo">
         <picture>
           <source srcset="./img/logo-large.png" media="(min-width: 1200px)" />
           <img width="101" height="84" src="./img/logo.png" />
         </picture>
-      </div>
+      </a>
       <nav class="navigation">
         <button class="navigation__toggle">
           <svg class="navigation__toggle--pic" preserveAspectRatio="xMidYMid slice">
@@ -53,16 +53,21 @@
         </div>
       </nav>
     </div>
-    <div class="bg-cover"></div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Sedona - сайт для туристов</h1>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <p class="title title--slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
-      <p class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div class="advantages__bg">
+      </div>
+          <div class="container">
+            <div class="advantages__wrap">
+              <p class="title title__slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
+              <p class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            </div>
+          </div>
       <ol class="advantages__list">
-        <li class="advantages__item">
+        <li class="advantages__item advantages__triangle">
           <h3 class="title title--advantages">Настоящий городок</h3>
           <p>— №1 —</p>
           <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
