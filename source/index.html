@@ -20,23 +20,20 @@
       <a class="page-header__logo">
         <picture>
           <source srcset="./img/logo-large.png" media="(min-width: 1200px)" />
-          <img width="101" height="84" src="./img/logo.png" />
+          <img class="page-header__image" width="101" height="84" src="./img/logo.png" />
         </picture>
       </a>
       <nav class="navigation">
-        <button class="navigation__toggle">
-          <svg class="navigation__toggle--pic" preserveAspectRatio="xMidYMid slice">
-            <use xlink:href="./img/sprite.svg#icon-menu"></use>
-          </svg>
+        <div class="navigation__inner">
+          <button class="navigation__toggle">
+            <span class="navigation__toogle-line navigation__toogle-line--top"></span>
+            <span class="navigation__toogle-line navigation__toogle-line--center"></span>
+            <span class="navigation__toogle-line navigation__toogle-line--bottom"></span>
           <span class="visually-hidden">открыть меню</span>
         </button>
+        </div>
         <div class="navigation__wrapper">
           <ul class="navigation__list site-list">
-            <button class="navigation__cloce">
-              <svg class="navigation__cross" width="23" height="22">
-                <use xlink:href="./img/sprite.svg#icon-cross"></use>
-              </svg>
-            </button>
             <li class="navigation__item">
               <a href="#" class="navigation__link navigation__link--current">Главная</a>
             </li>
@@ -168,5 +165,6 @@
   </div>
   <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
       href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      <script type="module" src="./js/index.js"></script>
 </body>
 </html>
