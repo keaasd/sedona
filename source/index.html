@@ -57,35 +57,44 @@
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="advantages__bg">
       </div>
-          <div class="container">
-            <div class="advantages__wrap">
-              <p class="title title__slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
-              <p class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-            </div>
-          </div>
+      <div class="advantages__wrap">
+        <p class="title title__slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
+        <p class="title__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
       <ol class="advantages__list">
         <li class="advantages__item advantages__triangle">
-          <h3 class="title title--advantages">Настоящий городок</h3>
-          <p>— №1 —</p>
-          <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="advantages__block">
+            <div class="advantages__text">
+              <h3 class="title title--advantages">Настоящий городок</h3>
+              <p>— №1 —</p>
+              <p class="title__subtitle advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <picture class="advantages__picture">
+              <source srcset="./img/photo-city-large.jpg" media="(min-width: 1200px)" />
+              <img class="advantages__image" width="320" height="260" src="./img/photo-city.jpg"/>
+            </picture>
+          </div>
+
+          <!-- эм  -->
           <div class="city-advantages">
             <h4 class="visually-hidden">Преимущества городка</h4>
             <ul class="city-advantages__list">
-              <li class="city-advantages__item">
-                <h5 class="city-advantages__title">Жилье</h5>
-                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <li class="city-advantages__item city-advantages__item--image-home">
+                <h5 class="title city-advantages__title">Жилье</h5>
+                <p class="title__subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="city-advantages__item city-advantages__item--image-gift">
+                <h5 class="title city-advantages__title">Сувениры</h5>
+                <p class="title__subtitle">Не только китайского, но и местного производства!</p>
               </li>
               <li class="city-advantages__item">
-                <h5 class="city-advantages__title">Сувениры</h5>
-                <p>Не только китайского, но и местного производства!</p>
-              </li>
-              <li class="city-advantages__item">
-                <h5 class="city-advantages__title">Еда</h5>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <h5 class="title city-advantages__title city-advantages__item--image-burger">Еда</h5>
+                <p class="title__subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </div>
         </li>
+        <!-- 2 -->
         <li class="advantages__item">
           <h3 class="title title--advantages">Там есть Мост дьявола</h3>
           <p>— №2 —</p>

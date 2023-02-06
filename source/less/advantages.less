@@ -38,7 +38,6 @@
 
 .advantages__triangle {
   position: relative;
-  padding: 57px 0 39px;
 
   &::after {
     content: "";
@@ -52,4 +51,20 @@
     border-top: 37px solid var(--color_default);
     transform: translateX(-50%);
   }
+}
+
+.advantages__block {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.advantages__text {
+  text-align: center;
+  padding: 57px 0 39px;
+}
+
+.advantages__image {
+  object-fit: cover;
 }

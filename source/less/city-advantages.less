@@ -1,0 +1,25 @@
+.city-advantages {
+  background-color: #ffffff;
+}
+
+.city-advantages__item {
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+  }
+
+  &--image-home::before {
+    background-image: url("../img/icon-house.svg.svg");
+  }
+
+  &--image-gift::before {
+    background-image: url("../img/icon-gift.svg.svg");
+  }
+
+  &--image-burger::before {
+    background-image: url("../img/icon-burger.svg.svg");
+  }
+}
