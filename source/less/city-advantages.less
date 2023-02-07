@@ -3,12 +3,18 @@
 }
 
 .city-advantages__item {
+  position: relative;
+  padding-left: 52px;
+
   &::before {
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 38px;
     display: block;
+    position: absolute;
     background-repeat: no-repeat;
+    left: 0;
+    top: 0;
   }
 
   &--image-home::before {
