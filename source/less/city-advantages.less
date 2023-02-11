@@ -2,9 +2,18 @@
   background-color: #ffffff;
 }
 
+.city-advantages__list {
+  padding-top: 26px;
+  padding-bottom: 35px;
+}
+
 .city-advantages__item {
   position: relative;
   padding-left: 52px;
+
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
 
   &::before {
     content: "";
@@ -17,6 +26,7 @@
     top: 0;
   }
 
+
   &--image-home::before {
     background-image: url("../img/icon-house.svg.svg");
   }
@@ -28,4 +38,9 @@
   &--image-burger::before {
     background-image: url("../img/icon-burger.svg.svg");
   }
+}
+
+.city-advantages__title {
+  text-align: left;
+  padding-top: 15px;
 }
