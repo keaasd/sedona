@@ -64,7 +64,7 @@
       <ol class="advantages__list">
         <li class="advantages__item advantages__triangle">
           <div class="advantages__block">
-            <div class="advantages__text advantages__text__top">
+            <div class="advantages__text advantages__text--top">
               <h3 class="title advantages__title title--color">Настоящий городок</h3>
               <p class="title--color">&mdash; №1 &mdash;</p>
               <p class="title__subtitle title__subtitle--color advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -80,38 +80,43 @@
             <ul class="city-advantages__list">
               <li class="city-advantages__item city-advantages__item--image-home">
                 <h5 class="title city-advantages__title">Жилье</h5>
-                <p class="title__subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="title__subtitle city-advantages__subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="city-advantages__item city-advantages__item--image-gift">
                 <h5 class="title city-advantages__title">Сувениры</h5>
-                <p class="title__subtitle">Не только китайского, но и местного производства!</p>
+                <p class="title__subtitle city-advantages__subtitle">Не только китайского, но и местного производства!</p>
               </li>
               <li class="city-advantages__item city-advantages__item--image-burger">
                 <h5 class="title city-advantages__title">Еда</h5>
-                <p class="title__subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="title__subtitle city-advantages__subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </div>
         </li>
         <!-- 2 -->
-        <li class="advantages__text advantages__item">
-          <h3 class="title title--color advantages__title">Там есть Мост дьявола</h3>
-          <p class="title--color">&mdash; №2 &mdash;</p>
-          <p class="title__subtitle title__subtitle--color advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <li class="advantages__item">
+          <div class="advantages__block">
+            <div class="advantages__text">
+              <h3 class="title title--color">Там есть Мост дьявола</h3>
+              <p class="title--color">&mdash; №2 &mdash;</p>
+              <p class="title__subtitle title__subtitle--color advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="advantages__pic advantages__pic--bridg"></div>
+        </div>
         </li>
         <div class="advantages__block-bg">
           <div class="container">
-            <li class="advantages__item container">
+            <li class="advantages__item advantages__block-bg--elem">
               <h3 class="title title--advantages">Небольшая площадь</h3>
               <p>&mdash; №3 &mdash;</p>
               <p class="title__subtitle advantages__description">Все интересные места находятся очень близко</p>
             </li>
-            <li class="advantages__item container">
+            <li class="advantages__item advantages__block-bg--elem">
               <h3 class="title title--advantages">Красивая дорога</h3>
               <p>&mdash; №4 &mdash;</p>
-              <p class="title__subtitle advantages__description">Схать в седону из лас-вегаса совсем не скучно!</p>
+              <p class="title__subtitle advantages__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
             </li>
-            <li class="advantages__item container">
+            <li class="advantages__item advantages__block-bg--elem">
               <h3 class="title title--advantages">Мало туристов</h3>
               <p>&mdash; №5 &mdash;</p>
               <p class="title__subtitle advantages__description">Большинство едет в гранд каньон и толпится там</p>
@@ -121,34 +126,44 @@
 
       </ol>
     </section>
-    <section class="search">
+    <section class="search container">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <p class="search__title">Заинтересовались?</p>
-      <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+      <p class="title search__title">Заинтересовались?</p>
+      <p class="title__subtitle search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в седоне</p>
-      <a class="search__button button" href="blank.html">Найти гостиницу</a>
+      <a class="button search__button" href="blank.html">Найти гостиницу</a>
     </section>
-    <section class="map">
+    <section class="map map__block">
+      <a class="map__link" href="#"></a>
     </section>
   </main>
   <footer class="page-footer">
-    <p class="page-footer__item">#visitSEDONA</p>
-    <!--Не поняла пока ссылка или просто абзац-->
+<div class="page-footer__wrap container">
+    <p class="page-footer__item page-footer__item-hash">#visitSEDONA</p>
     <div class="page-footer__social social">
       <h2 class="visually-hidden">Давайте дружить!</h2>
-      <ul class="social__list">
+      <ul class="social social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">
+            <!-- <svg>
+              <use>9</use>
+            </svg> -->
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--fb" href="#">
+            <!-- <svg>
+              <use>9</use>
+            </svg> -->
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
+            <!-- <svg>
+              <use>9</use>
+            </svg> -->
             <span class="visually-hidden">канал на YouTube</span>
           </a>
         </li>
@@ -160,21 +175,11 @@
         <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
       </a>
     </div>
+  </div>
   </footer>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div class="social">
-    <a href="" class="social__link">
-      <figure>
-        <!-- style="--color1:#EA0;--color2:#C80;" -->
-        <svg class="social__icon social__icon--facebook" preserveAspectRatio="xMidYMid slice">
-          <use xlink:href="./img/sprite.svg#squares"></use>
-        </svg>
-        <!-- <figcaption>Symbol from external sprite;<br>should be orange</figcaption> -->
-      </figure>
-      <!-- <svg class="social__icon">
-            <use xlink:href="#icon-house"></use>
-        </svg> -->
-    </a>
+
   </div>
   <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
       href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
